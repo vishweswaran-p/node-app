@@ -1,14 +1,22 @@
 #!/bin/sh
 ssh ubuntu@127.0.0.1 <<EOF
+    echo $USER
     cd ~/node-app
+    echo $USER
     git pull origin master
+    echo $USER
     curl -o-   https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh    | bash
+    echo $USER
     . ~/.nvm/nvm.sh
+    echo $USER
     nvm install v10.11.0
+    echo $USER
     npm install
     npm install -g nodemon forever
+    echo $USER
     forever stop node-app
     forever start -a --uid node-app index.js
     forever list
     exit
+   echo $USER
 EOF
