@@ -2,7 +2,7 @@
    echo $USER
 ssh ubuntu@127.0.0.1 <<EOF
     echo $USER
-    cd /var/projects/jenkins0demo/node-app
+    cd /var/projects/jenkins-demo/node-app
     echo $USER
     git pull origin master
     echo $USER
