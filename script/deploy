@@ -9,5 +9,6 @@ ssh ubuntu@3.224.206.123 <<EOF
     npm install -g nodemon forever
     forever stop node-app
     forever start -a --uid node-app index.js
+    forever list
     exit
 EOF
