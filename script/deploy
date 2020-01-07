@@ -5,6 +5,7 @@ ssh ubuntu@127.0.0.1 <<EOF
     cd /var/projects/jenkins-demo/node-app
     echo $USER
     git pull origin master
+    npm i
     echo $USER
     forever start -a --uid node-app index.js
     forever list
