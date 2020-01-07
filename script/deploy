@@ -1,4 +1,5 @@
 #!/bin/sh
+   echo $USER
 ssh ubuntu@127.0.0.1 <<EOF
     echo $USER
     cd ~/node-app
