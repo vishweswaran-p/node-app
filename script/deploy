@@ -7,7 +7,7 @@ ssh ubuntu@127.0.0.1 <<EOF
     git pull origin master
     npm i
     echo $USER
-    forever start -a --uid node-app index.js
+    forever restart node-app
     forever list
     exit
    echo $USER
