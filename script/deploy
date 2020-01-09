@@ -1,9 +1,9 @@
 #!/bin/sh
    echo $USER
 ssh ubuntu@127.0.0.1 <<EOF
+    cd /var/projects/jenkins-demo/node-app
     echo $USER
     echo $USER
-    git pull origin master
     npm i
     echo $USER
     forever restart node-app
