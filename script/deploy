@@ -1,6 +1,6 @@
 #!/bin/sh
    echo $USER
-sudo -i <<EOF
+ssh ubuntu@127.0.0.1 <<EOF
     echo $USER
     cd /var/projects/jenkins-demo/node-app
     echo $USER
