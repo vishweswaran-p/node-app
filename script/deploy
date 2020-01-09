@@ -1,6 +1,8 @@
 #!/bin/sh
    echo $USER
 ssh ubuntu@127.0.0.1 <<EOF
+    echo $USER
+    echo $USER
     cd /var/projects/jenkins-demo/node-app
     echo $USER
     echo $USER
